@@ -37,6 +37,11 @@ body {
     text-align: center;
 }
 
+.enemyNameLink {
+    text-decoration: underline;
+    color: red;
+}
+
 .btn {
     display: inline-block;
 }
@@ -79,4 +84,14 @@ body {
 #dodgeScreen p {
     font-weight: 600;
     font-size: 3rem;
+}
+
+.to-main-button{
+    margin: left;
+}
+
+#resultScreen{
+    font-size: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    margin: auto;
 }

@@ -60,14 +60,24 @@ const chooseEnemyScreenCreate = () => {
     enemyList.html('')
     enemies.forEach(enemy => {
         let enemyItem = $('<li>')
-        enemyItem.html(`Enemy #${enemy.id}: ${enemy.name}`)
+        let enemyName = $('<a>')
+        enemyItem.html(`Enemy #${enemy.id}: `)
 
-        enemyItem.attr('id', `enemy${enemy.id}`)
-        enemyItem.click(() => {
+        enemyName.text(`${enemy.name}`)
+        enemyName.attr('href', '')
+        enemyName.addClass('enemyNameLink')
+        enemyName.attr('id', `enemy${enemy.id}`)
+        enemyName.attr('data-toggle', 'tooltip')
+        enemyName.attr('data-placement', 'top')
+        enemyName.attr('title', `HP: ${enemy.hp}`)
+        enemyName.click((e) => {
+            e.preventDefault()
             currentEnemy = enemy
             currentUserState = user
             redrawPage(fightScreenCreate)
         })
+        enemyItem.append(enemyName)
+
         enemyList.append(enemyItem)
     })
 }
