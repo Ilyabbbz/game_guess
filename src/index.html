@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div id="display" class="container">
+
+        <div id="helloScreen">
+            <h1 class="hello">Hello, click button</h1>
+            <button class="btn btn-primary" id="helloButton">Continue</button>
+        </div>
+        <div id="chooseEnemyScreen">
+            <button class="btn btn-secondary to-main-button">Home</button>
+            <p class="chooseEnemy">Choose enemy:</p>
+            <ul id="enemyList">
+
+            </ul>
+        </div>
+        <div id="yourTurnScreen">
+            <p id="yourTurnText">Your turn</p>
+            <div id="hpBars">
+                <div>
+                    <p id="enemyNameHp"></p>
+                    <meter min="0" max="100" value="90" id="enemyHp" low="33" high="66" optimum="80"></meter>
+                </div>
+                <div>
+                    <p>Your hp</p>
+                    <meter min="0" max="100" value="50" id="userHp" low="33" high="66" optimum="80"></meter>
+                </div>
+            </div>
+            <div id="hitButtons">
+                <button id="hitButton1" class="btn btn-danger hitButton">1</button>
+                <button id="hitButton2" class="btn btn-danger hitButton">2</button>
+                <button id="hitButton3" class="btn btn-danger hitButton">3</button>
+            </div>
+        </div>
+        <div id="dodgeScreen">
+            <p>You missed. Dodge enemy hit.</p>
+            <div id="dodgeButtons">
+                <button id="dodgeButton1" class="btn btn-warning dodgeButton">1</button>
+                <button id="dodgeButton2" class="btn btn-warning dodgeButton">2</button>
+            </div>
+        </div>
+        <div id="resultScreen">
+            <p id="resultText"></p>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>А
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
